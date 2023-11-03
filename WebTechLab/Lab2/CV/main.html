@@ -1,82 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mukesh CV</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Resume</title>
+    <style>
+        body {
+            background-color: #D5D8DC;
+        }
+
+        .resume-container {
+            width: 700px;
+            height: 800px;
+            margin: 0 auto;
+            display: flex; /* Use flexbox to align the columns side by side */
+        }
+
+        .left-column {
+            width: 200px;
+            background-color: #484846;
+            color: #ffffff;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the left (top) */
+        }
+
+        .profile-pic {
+            width: 110px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .space {
+            margin-bottom: 3px; /* Adjust the spacing between Contact Info and Phone/Email */
+        }
+
+        .right-column {
+            width: 500px;
+            background-color: #ffffff;
+            padding: 10px;
+            color: #1c2833;
+        }
+
+        .left-column h4 {
+            font-weight: normal; /* Remove bold styling */
+            margin: 5px 0; /* Adjust the margins */
+        }
+
+        .skill-container {
+            width: 100%;
+            background-color: #4d4d4d;
+            margin: 0px 10px;
+        }
+
+        .skill {
+            text-align: right;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            color: white;
+        }
+
+        .workunderpressure {
+            width: 95%;
+            background-color: white;
+        }
+
+        .time {
+            width: 80%;
+            background-color: white;
+        }
+
+        .thinking {
+            width: 90%;
+            background-color: white;
+        }
+
+        .creativity {
+            width: 80%;
+            background-color: white;
+        }
+
+        .communication {
+            width: 90%;
+            background-color: white;
+        }
+
+        .left-column ul li {
+            text-align: left;
+        }
+        
+    </style>
 </head>
 <body>
-    <header>
-        <h1>MUKESH TP</h1>
-        <div class="contact-info">
-            +91 8973668973 ◇ DoB: 05/03/2004 ◇ Kerala, IN
-            <br>
-            <a href="mailto:mukesh21110412@snuchennai.edu.in">mukesh21110412@snuchennai.edu.in</a>
-            ◇
-            <a href="https://linktr.ee/mukeshtp" target="_blank">https://linktr.ee/mukeshtp</a>
+    <div class="resume-container">
+        <div class="left-column">
+            <img src="c:\Users\kruti\OneDrive\Desktop\image.png" alt="" class="profile-pic">
+            <h2 class="space"><u>Contact Info</u></h2>
+            <h4>Phone number: 192839103<br>Email id: kruti@gmail.com</h4>
+
+            <h2 class="space"><u>Soft Skills</u></h2>
+            <p>Working Under Pressure:</p>
+            <div class="skill-container">
+                <div class="skill workunderpressure"></div>
+            </div>
+            <p>Time Management:</p>
+            <div class="skill-container">
+                <div class="skill time"></div>
+            </div>
+            <p>Logical Thinking:</p>
+            <div class="skill-container">
+                <div class="skill thinking"></div>
+            </div>
+            <p>Creativity:</p>
+            <div class="skill-container">
+                <div class="skill creativity"></div>
+            </div>
+            <p>Communcation:</p>
+            <div class="skill-container">
+                <div class="skill communication"></div>
+            </div>
+            <h2 class="space"><u>Projects</u></h2>
+            <ul>
+                <li>Iot Based electricity energy Meter using ESP12 and arduino</li>
+                <li>Professional electives course enrollment thats works as a booking system</li>
+                <li>identifying url using phishing websites </li>
+            </ul>
         </div>
-    </header>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <h3>B.Tech CSE with Specialization in IoT</h3>
-                <p>Shiv Nadar University Chennai, Tamil Nadu</p>
-            </li>
-            <li>
-                <h3>Class XII</h3>
-                <p>International Indian School Dammam, Saudi Arabia</p>
-            </li>
-            <li>
-                <h3>Class X</h3>
-                <p>International Indian School Dammam, Saudi Arabia</p>
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Experience</h2>
-        <ul>
-            <li>
-                <h3>Student Ambassador</h3>
-                <p>Streamlit</p>
-            </li>
-            <li>
-                <h3>Engineering Intern</h3>
-                <p>Karbonwise</p>
-            </li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>C</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>HTML</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li>Vortex Tube</li>
-            <li>Automated Watering System</li>
-            <li>Music Recommendation System</li>
-            <li>Search Algorithm Visualization</li>
-            <li>Digital Locker & Reminder System</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Extracurricular</h2>
-        <ul>
-            <li>Acquired 4th Dan Black Belt in Shito-ryu style Karate</li>
-        </ul>
-    </section>
+        <div class="right-column">
+            <h2 class="space"><u>About Me</u></h2>
+                <p>I am a passionate 3rd year student studying Computer Science with a specialization in IOT,looking for an internship in a company that will allow me to explore career options in Computer Science.I am highly 
+                    motivated to gain experience during the internship to build a strong base for a successful career.</p>
+            <h2 class="space"><u>Education</u></h2>
+                <p><b>B.Tech CSE(IOT)</b></p>
+                <p><b>Shiv Nadar University Chennai</b>(2021-present)</p>
+                <ul>
+                    <li>A 3rd year student with a cgpa of 8.4</li>
+                    <li>Expected to graduate in 2025</li>
+                </ul>
+                <p><b>12th Grade:Sri Chaitanya Perumbakkam,Chennai</b></p>
+                <ul>
+                    <li>Percentage:91.8%</li>
+                </ul>
+                <p><b>10th Grade:Narayana E-Techno SChool,Chennai</b></p>
+                <ul>
+                    <li>Perecentage:90%</li>
+                </ul>
+                <hr>
+                <h2 class="space"><u>Relevant Coursework</u></h2>
+                <ul>
+                    <li>Operating Systems lab</li>
+                    <li>Foundations to Data Science</li>
+                    <li>Sensor Technology</li>
+                    <li>Computer Networks and COA</li>
+                    <li>Data Structures</li>
+                </ul>
+                <hr>
+                <h2 class="space"><u>Technical Skills:</u></h2>
+                <ul>
+                    <li>C programming</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>MYSQL</li>
+                </ul>
+                <hr>
+                
+                
+        </div>
+    </div>
 </body>
 </html>

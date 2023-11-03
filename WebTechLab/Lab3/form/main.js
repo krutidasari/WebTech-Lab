@@ -1,30 +1,40 @@
-const form = document.getElementById('myForm');
-const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email');
+function validateForm(){
+    const name= document.getElementById('name').value.trim();
+    const email= document.getElementById('email').value.trim();
+    const password= document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirm-password').value;
 
-form.addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    if (!nameInput.value.trim()) {
-        alert('Name is required');
-        return;
+    if(name.length < 3){
+        alert('NAme must be atleast 3 characters long');
+        return false;
     }
 
-    if (!emailInput.value.trim()) {
-        alert('Email is required');
-        return;
+    if(!email.includes('@')){
+        alert('please enter a valid email address');
+        return false;
     }
-    
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
 
-    if (confirm(`Name: ${name}\nEmail: ${email}\n\nDo you want to proceed?`)) {
-        const userText = prompt('Please enter some text:');
-        if (userText) {
-            alert(`You entered: ${userText}`);
-            form.reset();
-        } else {
-            alert('Text entry was canceled.');
-        }
+    if(password.length< 6){
+        alert('password must be atleast 6 characters long');
+        return false;
     }
-});
+
+    if(password !== confirmPassword){
+        alert('Passwords do not match');
+        return false;
+    }
+
+    const age =prompt('Please enter your age:');
+    if (age === null || age === '' || isNaN(age)){
+        alert('Please enter a valid age');
+        return false;
+    }
+
+    const isConfirmed = confirm('Do you want to submit the form?');
+    if(!isConfirmed){
+        return false;
+    }
+
+    alert('Form submitted successfully!');
+    return true;
+}
